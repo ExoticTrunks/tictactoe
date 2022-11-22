@@ -13,6 +13,14 @@ code {
     monospace;
 }
 
+h1 {
+  text-transform: uppercase;
+  background: -webkit-linear-gradient( #f87171, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -65,4 +73,5 @@ table{
 h3 {
   font-size: 30px;
   font-weight: 300;
+  font-style: italic;
 }

@@ -32,7 +32,9 @@ const Board = () => {
         }
 
         if (cells.every((cell) => cell !== '')) {
-            toast.error("It's a draw!")
+            toast("It's a draw!",{
+            icon: '✋',
+            })
             setDraw(true)
             return
         }
@@ -88,6 +90,7 @@ const Board = () => {
 
   return (
     <div className='container'>
+    <h1>Tic Tac Toe ❌ ⭕️</h1>
     <h3>Next Move: {turn}</h3>
         <table>
             <tr>
