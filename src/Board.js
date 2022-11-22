@@ -25,7 +25,9 @@ const Board = () => {
         for (let i = 0; i < 8; i++) {
             const [a, b, c] = patterns[i];
             if (cells[a] && cells[a] === cells[b] && cells[a] === cells[c] && cells[b] === cells[c]) {
-                toast.success(`Player ${cells[a]} won!`)
+                toast(`Player ${cells[a]} won!`,{
+                    icon: '🎉',
+                })
                 setWinner(cells[a]) 
                 return
             }
