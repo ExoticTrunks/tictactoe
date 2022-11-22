@@ -91,7 +91,11 @@ const Board = () => {
   return (
     <div className='container'>
     <h1>Tic Tac Toe ❌ ⭕️</h1>
-    <h3>Next Move: {turn}</h3>
+    {/* display winner or draw  */}
+    {winner ? <h3>{winner} wins!</h3>: null}
+    {draw ? <h3>It's a draw!</h3>: null}
+    {/* display turn if winner or draw not*/}
+    {winner ? null: draw ? null : <h3>Turn: {turn}</h3>}
         <table>
             <tr>
                 <Cell num={0} />
